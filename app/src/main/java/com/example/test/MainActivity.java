@@ -1,10 +1,21 @@
 package com.example.test;
 
 import androidx.appcompat.app.AppCompatActivity;
+<<<<<<< HEAD
+=======
+import androidx.core.app.NotificationCompat;
+import androidx.core.app.NotificationManagerCompat;
+>>>>>>> a868f96 (Test)
 import androidx.recyclerview.widget.LinearLayoutManager;
 
 import android.annotation.SuppressLint;
 import android.app.Dialog;
+<<<<<<< HEAD
+=======
+import android.app.NotificationChannel;
+import android.app.NotificationManager;
+import android.content.Intent;
+>>>>>>> a868f96 (Test)
 import android.os.Build;
 import android.os.Bundle;
 import android.util.Log;
@@ -18,6 +29,10 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Comparator;
 import java.util.List;
+<<<<<<< HEAD
+=======
+import java.util.Random;
+>>>>>>> a868f96 (Test)
 
 public class MainActivity extends AppCompatActivity implements Click, Complete {
 
@@ -66,12 +81,20 @@ public class MainActivity extends AppCompatActivity implements Click, Complete {
             dialogCreate.show();
         });
         binding.buttonOut.setOnClickListener(v -> {
+<<<<<<< HEAD
             Collections.sort(strings, String::compareTo);
             for (String s : strings) {
                 Log.d("AAA", "Sort: " + s);
             }
             int a = strings.indexOf("/F");
             Log.d("AAA", a + "");
+=======
+            Intent i= new Intent(this, ServiceUpload.class);
+            i.putExtra("mode", "download");
+            this.startService(i);
+
+            //new Handler(Looper.getMainLooper()).postDelayed(() -> notificationManagerCompat.cancel(ID), 2000);
+>>>>>>> a868f96 (Test)
         });
     }
 
