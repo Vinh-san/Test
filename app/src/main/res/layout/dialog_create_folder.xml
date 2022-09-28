@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:background="#CED4E6"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginTop="10dp"
+        android:text="Create New Folder"
+        android:textColor="@color/black"
+        android:textSize="25sp"
+        android:textStyle="bold" />
+
+    <EditText
+        android:id="@+id/edittext_name"
+        android:layout_width="match_parent"
+        android:layout_height="50dp"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="20dp"
+        android:layout_marginStart="20dp"
+        android:layout_marginTop="10dp"
+        android:padding="10dp"
+        android:hint="Enter_folder_name"
+        android:textColor="@color/black"
+        android:textSize="20sp"
+        android:importantForAutofill="no"
+        android:inputType="text" />
+
+    <LinearLayout
+        android:id="@+id/linearlayout_button"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:layout_marginBottom="10dp"
+        android:orientation="horizontal">
+
+        <Button
+            android:id="@+id/button_ok"
+            android:backgroundTint="#1D7EB3"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="20dp"
+            android:layout_marginStart="40dp"
+            android:text="Ok"
+            android:textColor="@color/white"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+        <Button
+            android:id="@+id/button_cancel"
+            android:backgroundTint="@color/white"
+            android:layout_width="120dp"
+            android:layout_height="55dp"
+            android:layout_marginEnd="40dp"
+            android:layout_marginStart="20dp"
+            android:text="Cancel"
+            android:textColor="#292929"
+            android:textSize="18sp"
+            style="?android:attr/buttonBarButtonStyle" />
+
+    </LinearLayout>
+
+</LinearLayout>

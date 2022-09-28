@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:weightSum="10"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textview_title"
+        android:background="#CEF7FF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingBottom="10dp"
+        android:paddingTop="10dp"
+        android:fontFamily="cursive"
+        android:text="My Cloud"
+        android:textColor="@color/black"
+        android:textSize="40sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_name"
+        android:background="#327BFF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.75"
+        android:gravity="center"
+        android:padding="7dp"
+        android:textColor="#DADADA"
+        android:textSize="20sp"
+        android:textStyle="bold" />
+
+    <TextView
+        android:id="@+id/textview_path"
+        android:background="#EFEFEF"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:gravity="center_vertical"
+        android:padding="7dp"
+        android:textColor="@color/black"
+        android:textSize="17sp" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="7.75">
+
+        <androidx.core.widget.NestedScrollView
+            android:id="@+id/nested_scrollview"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/recyclerview_listFile"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content" />
+
+        </androidx.core.widget.NestedScrollView>
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_add"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentStart="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginStart="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D37C7C"
+            app:backgroundTint="#1D7EB3"
+            app:icon="@android:drawable/ic_input_add"
+            app:iconPadding="5dp"
+            app:iconSize="24dp"
+            app:iconTint="#FFFFFF" />
+
+        <com.google.android.material.button.MaterialButton
+            android:id="@+id/button_out"
+            android:layout_width="55dp"
+            android:layout_height="55dp"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentBottom="true"
+            android:layout_marginEnd="10dp"
+            android:layout_marginBottom="10dp"
+            android:backgroundTint="#D37C7C"
+            app:backgroundTint="#1D7EB3"
+            app:icon="@android:drawable/ic_menu_close_clear_cancel"
+            app:iconPadding="5dp"
+            app:iconSize="24dp"
+            app:iconTint="#FFFFFF" />
+
+    </RelativeLayout>
+
+</LinearLayout>
